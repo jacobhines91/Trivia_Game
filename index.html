@@ -1,0 +1,223 @@
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trivia!</title>
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+​
+    <div class="container" id="quiz">
+        <div class="row">
+            <div class="col-8 game">
+​
+                <!-- ANCHOR Heading -->
+                <div class="row heading text-center mb-4">
+                    <div class="col-12">
+                        <h1 class="display-2 text-warning">Breaking Bad</h1>
+                        <h1 class="display-4 text-warning border-bottom border-warning pb-2">Trivia Game</h1>
+                        <p id= "timer" class="timer d-none">1:00:00</p>
+                    </div>
+                </div>
+​
+                <!-- ANCHOR Start screen -->
+                <div class="row start-screen text-center">
+                    <div class="col-12">
+                        <button class="btn btn-warning btn-lg mt-5 d-none" id="start-btn">START</button>
+                    </div>
+                </div>
+​
+                <!-- ANCHOR Questions -->
+                <div id="questions-screen">
+                    <!-- ANCHOR Q1 -->
+                    <div class="row question-1 mb-5 q1">
+                        <div class="col-12 text-center">
+                            <p>1. Walt doesn't call it the Drug Business, he calls it...</p>
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-outline-warning" class= "answers">
+                                  <input type="radio" name="options" id="option1" autocomplete="off" checked> making a living
+                                </label>
+                                <label class="btn btn-outline-warning">
+                                  <input type="radio" name="options" id="option2" autocomplete="off"> pure chemistry
+                                </label>
+                                <label class="btn btn-outline-warning">
+                                  <input type="radio" name="options" id="option3" autocomplete="off"> the Empire Business
+                                </label>
+                                <label class="btn btn-outline-warning">
+                                  <input type="radio" name="options" id="option3" autocomplete="off"> "my family's nest egg"
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ANCHOR Q2 -->
+                    <div class="row question-2 mb-5 q2">
+                        <div class="col-12 text-center">
+                            <p>2. What RV did Walt and Jesse cook in?</p>
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-outline-warning">
+                                  <input type="radio" name="options" id="option1" autocomplete="off" checked> Winnebago
+                                </label>
+                                <label class="btn btn-outline-warning">
+                                  <input type="radio" name="options" id="option2" autocomplete="off"> Bounder
+                                </label>
+                                <label class="btn btn-outline-warning">
+                                  <input type="radio" name="options" id="option3" autocomplete="off"> Mountaineer
+                                </label>
+                                <label class="btn btn-outline-warning">
+                                  <input type="radio" name="options" id="option3w" autocomplete="off"> Dutchman
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ANCHOR Q3 -->
+                    <div class="row question-3 mb-5 q3">
+                        <div class="col-12 text-center">
+                            <p>3. When Walt retired from the drug business, how much money did he walk away with?</p>
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-outline-warning">
+                                  <input type="radio" name="options" id="option1" autocomplete="off" checked> 40 Million
+                                </label>
+                                <label class="btn btn-outline-warning">
+                                  <input type="radio" name="options" id="option2" autocomplete="off"> 4 Million
+                                </label>
+                                <label class="btn btn-outline-warning">
+                                  <input type="radio" name="options" id="option3" autocomplete="off"> 80 Million
+                                </label>
+                                <label class="btn btn-outline-warning">
+                                  <input type="radio" name="options" id="option3" autocomplete="off"> 8 Million
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row question-3 mb-5 q4">
+                      <div class="col-12 text-center">
+                          <p>What is Maries Favorite Color?</p>
+                          <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                              <label class="btn btn-outline-warning">
+                                <input type="radio" name="options" id="option1" autocomplete="off" checked> Blue
+                              </label>
+                              <label class="btn btn-outline-warning">
+                                <input type="radio" name="options" id="option2" autocomplete="off"> Green
+                              </label>
+                              <label class="btn btn-outline-warning">
+                                <input type="radio" name="options" id="option3" autocomplete="off"> Purple
+                              </label>
+                              <label class="btn btn-outline-warning">
+                                <input type="radio" name="options" id="option3" autocomplete="off"> Red
+                              </label>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row question-3 mb-5 q5">
+                    <div class="col-12 text-center">
+                        <p>What book is Hank reading on the toilet when he first suspects his brother and law of being Heisenberg </p>
+                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                            <label class="btn btn-outline-warning">
+                              <input type="radio" name="options" id="option1" autocomplete="off" checked> Leaves of Grass
+                            </label>
+                            <label class="btn btn-outline-warning">
+                              <input type="radio" name="options" id="option2" autocomplete="off"> Catcher in the Rye
+                            </label>
+                            <label class="btn btn-outline-warning">
+                              <input type="radio" name="options" id="option3" autocomplete="off"> Heart of Darkness
+                            </label>
+                            <label class="btn btn-outline-warning">
+                              <input type="radio" name="options" id="option3" autocomplete="off"> 50 Shades of Gray Matter
+                            </label>
+                        </div>
+                    </div>
+                </div>
+           
+            <div class="row question-3 mb-5 q6">
+              <div class="col-12 text-center">
+                  <p>What is the name of the boy Todd Shot in the Desert?</p>
+                  <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                      <label class="btn btn-outline-warning">
+                        <input type="radio" name="options" id="option1" autocomplete="off" checked> Daniel Shurr
+                      </label>
+                      <label class="btn btn-outline-warning">
+                        <input type="radio" name="options" id="option2" autocomplete="off"> Drew Sharp
+                      </label>
+                      <label class="btn btn-outline-warning">
+                        <input type="radio" name="options" id="option3" autocomplete="off"> David Shurr
+                      </label>
+                      <label class="btn btn-outline-warning">
+                        <input type="radio" name="options" id="option3" autocomplete="off"> David Sharp
+                      </label>
+                  </div>
+              </div>
+          </div>
+          <div class="row question-3 mb-5 q7">
+            <div class="col-12 text-center">
+                <p>What street does Jessie live on?</p>
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-outline-warning">
+                      <input type="radio" name="options" id="option1" autocomplete="off" checked>Mango Street
+                    </label>
+                    <label class="btn btn-outline-warning">
+                      <input type="radio" name="options" id="option2" autocomplete="off"> Margo Street
+                    </label>
+                    <label class="btn btn-outline-warning">
+                      <input type="radio" name="options" id="option3" autocomplete="off"> Sunny Street
+                    </label>
+                    <label class="btn btn-outline-warning">
+                      <input type="radio" name="options" id="option3" autocomplete="off">Mellanas
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="row question-1 mb-5 q8">
+          <div class="col-12 text-center">
+              <p>What is the name of the Hotel frequently used in the show?</p>
+              <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                  <label class="btn btn-outline-warning">
+                    <input type="radio" name="options" id="option1" autocomplete="off" checked> Crossroads Motel
+                  </label>
+                  <label class="btn btn-outline-warning">
+                    <input type="radio" name="options" id="option2" autocomplete="off">Crossroads Inn
+                  </label>
+                  <label class="btn btn-outline-warning">
+                    <input type="radio" name="options" id="option3" autocomplete="off"> Long Water Motel
+                  </label>
+                  <label class="btn btn-outline-warning">
+                    <input type="radio" name="options" id="option3" autocomplete="off">
+                    Long Leaf Motel
+                  </label>
+              </div>
+          </div>
+      </div>
+      
+                  
+              </div>
+    
+              
+             
+​
+            <!-- END of game div -->
+            </div>
+        </div>
+    </div>
+​
+    
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+<!-- BS JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!-- JavaScript -->
+<script src="app.js"></script>
+</body>
+</html>
+
+
+
+
